@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="5pt"
+    android:textAlignment="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10pt"
+        android:paddingBottom="10pt">
+
+        <TextView
+            android:id="@+id/WeekDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/average_sans"
+            android:paddingTop="10dp"
+            android:text="MONDAY ,"
+            android:textAlignment="textEnd"
+            android:textColor="@color/purpur"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0.7"
+            android:fontFamily="@font/average_sans"
+            android:text=" March 14th"
+            android:textColor="@color/purpur"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:alpha="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tableRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="1" />
+    </ScrollView>
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal"
+        android:paddingBottom="2pt">
+
+        <TextView
+            android:id="@+id/TaskCounter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:alpha="0.7"
+            android:fontFamily="@font/average_sans"
+            android:paddingLeft="10pt"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/purpur"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:alpha="0.7"
+            android:fontFamily="@font/average_sans"
+            android:paddingStart="3pt"
+            android:text="Tasks"
+            android:textColor="@color/purpur"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/AddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="0.5"
+            android:background="#00FFFFFF"
+            android:paddingRight="20dp"
+            android:text="ADD NEW +"
+            android:textAlignment="viewEnd"
+            android:textColor="@color/purpur"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
